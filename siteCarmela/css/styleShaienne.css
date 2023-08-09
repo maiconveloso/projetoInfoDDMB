@@ -1,0 +1,87 @@
+.navigation-menuShaienne {
+  background: black;
+  border-radius: 6px;
+  height: 86.2%;
+  width: 20%;
+  padding: 50px 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  right: -35%;
+  top: 0;
+  transition: all 3s;
+  z-index: 1;
+  font-size: 30px;
+  margin-top: 0.1cm;;
+  margin-right: 0.2cm;
+}
+
+.navigation-menuShaienne li {
+  border-radius: 6px;
+  margin-left: 0.2cm;
+  margin-right: 0.2cm;
+
+}
+
+.navigation-menuShaienne li:nth-of-type(2n) {
+  background: black;
+}
+
+.navigation-menuShaienne li:hover {
+  background: white;
+}
+
+.navigation-menuShaienne a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  transition:all 3s;
+}
+
+.navbarShaienne {
+  margin-top: 0.1cm;
+  border-radius: 6px;
+  background: #E5E5E5;
+  padding: 20px;
+  position: fixed;
+  width: 95%;
+  top: 0;
+}
+
+.content {
+  width: 60%;
+  margin:2cm 0cm 0cm 2cm; 
+  transition-duration: 3s;
+  position: relative;
+  left: 0;
+ 
+}
+.img{
+  width: 63.5%;
+  height: 70%;
+  margin-left: 20cm;
+}
+
+#toggleShaienne {
+  display: none; 
+}
+
+label[for="toggleShaienne"] {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input#toggleShaienne:checked + ul.navigation-menuShaienne {
+  right: 0;
+}
+
+input#toggleShaienne:checked ~ .content {
+  left: -35%;
+}
+.img2{
+  width: 75%;
+  height: 44%;
+  border-radius: 6px;
+}
